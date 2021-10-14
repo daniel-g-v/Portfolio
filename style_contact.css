@@ -76,6 +76,11 @@ p {
 
 p a {
     text-decoration: none;
+    font-size: 1.3rem;
+}
+
+.personal-mail {
+    grid-area: 6 / 2 / 7 / 4;
 }
 
 .pic-container {
