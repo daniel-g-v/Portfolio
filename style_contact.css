@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'Arima Madurai';
+    src: url("./Resources/Fonts/ArimaMadurai-Medium.ttf") format("Truetype");
+    font-weight: 500;
+}
+
+*{
+    font-family: 'Arima Madurai', cursive;
+    font-size: 16px;
+    color: white;
+}
+
+html {
+    background: #A80000;
+    background: -moz-radial-gradient(center, #A80000 0%, #140000 100%);
+    background: -webkit-radial-gradient(center, #A80000 0%, #140000 100%);
+    background: radial-gradient(ellipse at center, #A80000 0%, #140000 100%);
+    background-repeat: no-repeat;
+    min-height: 100%;
+    min-width: 100%;
+}

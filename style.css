@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: 'Arima Madurai';
-    src: url("./Resources/ArimaMadurai-Medium.ttf") format("Truetype");
+    src: url("./Resources/Fonts/ArimaMadurai-Medium.ttf") format("Truetype");
     font-weight: 500;
 }
 
@@ -19,6 +19,7 @@ html {
     background: radial-gradient(ellipse at center, #A80000 0%, #140000 100%);
     background-repeat: no-repeat;
     min-height: 100%;
+    min-width: 100%;
 }
 
 /*Header*/
@@ -30,7 +31,7 @@ nav {
 }
 
 nav h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     word-spacing: 0.5rem;
     padding-left: 1.2rem;
     letter-spacing: 0.125rem;
@@ -39,7 +40,7 @@ nav h1 {
 nav .main-msg {
     grid-row: 2 / 3;
     grid-column: 1 / 2;
-    padding-left: 1.2rem;
+    padding-left: 1.5rem;
     font-size: 1.1rem;
 }
 
@@ -50,7 +51,7 @@ nav ul {
 }
 
 nav li {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     display: inline-block;
     margin: auto 1.5rem;
 }
@@ -59,8 +60,220 @@ nav a {
     text-decoration: none;
     font-size: 1.3rem;
 }
-#folder-icon, #face, #contact {
+
+#folder-icon, #face, #contact, #arrow-up, #arrow-circle-left, #contact-page {
     position: relative;
     top: 0.3rem;
     left: 0.5rem;
 }
+
+/*Projects section*/
+
+.banner {
+   display: grid;
+   justify-items: center;
+   grid-template: 1fr 4fr / repeat(3, 1fr) ;
+   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+#projects .container, #project-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+#projects h2 {
+    grid-area: 1 / 1 / 2 / span 3;
+    padding-left: 2.4rem;
+    align-self: center;
+    justify-self: start;
+    font-size: 1.9rem;
+}
+
+#project-1 {
+    background-image: url("./Resources/Images/Salsa-banner.jpg");
+    background-position: center center;
+    background-size: contain;
+}
+
+.banner h3, .banner a {
+    font-size: 1.3rem;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+/*CSS for loading animation*/
+
+.lds-grid {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-grid div {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #fff;
+    animation: lds-grid 1.2s linear infinite;
+  }
+  .lds-grid div:nth-child(1) {
+    top: 8px;
+    left: 8px;
+    animation-delay: 0s;
+  }
+  .lds-grid div:nth-child(2) {
+    top: 8px;
+    left: 32px;
+    animation-delay: -0.4s;
+  }
+  .lds-grid div:nth-child(3) {
+    top: 8px;
+    left: 56px;
+    animation-delay: -0.8s;
+  }
+  .lds-grid div:nth-child(4) {
+    top: 32px;
+    left: 8px;
+    animation-delay: -0.4s;
+  }
+  .lds-grid div:nth-child(5) {
+    top: 32px;
+    left: 32px;
+    animation-delay: -0.8s;
+  }
+  .lds-grid div:nth-child(6) {
+    top: 32px;
+    left: 56px;
+    animation-delay: -1.2s;
+  }
+  .lds-grid div:nth-child(7) {
+    top: 56px;
+    left: 8px;
+    animation-delay: -0.8s;
+  }
+  .lds-grid div:nth-child(8) {
+    top: 56px;
+    left: 32px;
+    animation-delay: -1.2s;
+  }
+  .lds-grid div:nth-child(9) {
+    top: 56px;
+    left: 56px;
+    animation-delay: -1.6s;
+  }
+  @keyframes lds-grid {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+  }
+
+  /*Personal info section*/
+
+.personal-info {
+    display: grid;
+    grid-template: auto / 1fr 1fr 2fr 2fr;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.personal-info h2 {
+   padding-left: 2.4rem;
+   font-size: 1.9rem;
+   grid-area: 1 / 1 / 2 / 2 ;
+}
+
+.profile-pic {
+    width: 18rem;
+    height: 18rem;
+    grid-area: 2 / 1 / 3 / 2;
+    margin-left: 2.4rem;
+    background-image: url('./Resources/Images/IMG_20191122_214154.jpg');
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 20px;
+} 
+
+.personal-info ul {
+    grid-area: 2 / 2 / 3 / 3;
+    list-style-type: circle;
+    letter-spacing: 1px;
+    align-self: center;
+}
+
+.about-me-message {
+    grid-area: 1 / 3 / 3 / 5;
+    place-self: start center;
+}
+.personal-info li {
+    font-size: 1.4rem;
+}
+
+.about-me-message, strong, em {
+    font-size: 1.6rem;
+}
+
+.tech-container {
+    display: flex;
+    grid-area: 2 / 3 / 3 / 5;
+    place-self: center center;
+    margin-top: 50px;
+}
+
+.personal-info .tech-container img{
+    max-width: 90%;
+    max-height: 150px;
+    opacity: 0.7;
+}
+
+.personal-info h3 {
+    font-size: 1.5rem;
+    grid-area: 2 / 3 / 3 / 5;
+    place-self: start center;
+}
+
+.cv {
+    font-size: 1.4rem;
+    color: rgba(255, 255, 0, 0.795);
+    text-decoration: none;
+}
+
+/*Footer*/
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+footer p {
+    font-size: 1.3rem;
+    padding-left: 2.4rem;
+}
+
+.links-container a img {
+    max-width: 32px;
+    max-height: auto;
+    margin: auto 10px;
+}
+
+.links-container {
+    display: flex;
+    max-width: 100px;
+    max-height: auto;
+    align-items: center;
+    padding-right: 2.4rem;
+}
+
+
+
