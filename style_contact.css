@@ -19,3 +19,73 @@ html {
     min-height: 100%;
     min-width: 100%;
 }
+
+body {
+    display: grid;
+    grid-template: auto / 2fr 1fr 1fr 2fr;
+}
+
+body h1 {
+    font-size: 2.5rem;
+    grid-area: 1 / 2 / 2 / 4;
+}
+
+form {
+    grid-row: 2 / auto;
+    grid-column: 2 / 4;
+}
+
+form input {
+    color: black;
+    border-radius: 10px;
+    max-width: 300px;
+}
+
+textarea {
+    color: black;
+    border-radius: 10px;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.links-container a img {
+    max-width: 40px;
+    max-height: auto;
+    margin: auto 5px;
+}
+
+.links-container {
+    display: flex;
+    max-width: 100px;
+    max-height: auto;
+    align-items: center;
+    grid-area: 3 / 2 / 4 / 4;
+    place-self: center;
+    margin-top: 10px;
+} 
+
+p {
+    font-size: 1.3rem;
+    grid-area: 5 / 2 / 6 / 4;
+    place-self: center;
+}
+
+p a {
+    text-decoration: none;
+}
+
+.pic-container {
+    width: 7rem;
+    height: 7rem;
+    grid-area: 4 / 2 / 5  / 4;
+    background-image: url('./Resources/Images/IMG_20191122_214154.jpg');
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center center;
+    place-self: center;
+    margin-top: 5px;
+} 
