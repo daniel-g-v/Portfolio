@@ -1,0 +1,179 @@
+/*Universal Styles*/
+@font-face {
+    font-family: 'Architects Daughter'; 
+    src: url('../Resources/Fonts/ArchitectsDaughter-Regular.ttf') format('Truetype');
+}
+
+* {
+    font-size: 20px;
+    color: azure;
+    font-family: 'Architects Daughter', cursive;
+} 
+
+body {
+    background-image: url('../Resources/Images/background-img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-color: #464646;
+    }
+
+/*Nav Bar*/
+
+nav {
+    display: grid;
+    grid-template: 2rem / 1fr 2fr 1fr;  
+}
+
+.logo {
+    border-radius: 5px;
+    grid-column: 3 / 3;
+    justify-self: center;
+}
+
+.nav-options {
+    grid-column: 1 / 2;
+    align-self: start;
+    list-style-type: none;
+}
+
+li {
+    margin: 5px auto;
+}
+ /*Banner section*/ 
+
+ .banner {
+     display: flex;
+     background-color: white;
+     opacity: 0.5;
+     height: 200px;
+     margin-top: 0.5rem;
+     justify-content: center;
+     align-items: center;
+    }
+
+ .banner h1 {
+    color: black;
+    font-size: 2.5rem;
+ }
+
+ /*Events*/
+.events {
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    height: 500px;
+    gap: 0.2rem;
+}
+
+.events img {
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
+}
+
+.events h1 {
+    grid-column: 2 / 3;
+    place-self: center;
+    font-size: 1.2rem;
+}
+
+.events p {
+    grid-row: 2 / 3;
+    grid-column: 1 / span 3;
+    place-self: center ;
+    font-size: 1.1rem;
+}
+
+.rueda {
+    grid-row: 3 / 4;
+    grid-column: 3 / 4; 
+}
+
+.rueda-2 {
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
+}
+
+.rueda-3 {
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+}
+
+@media screen and (max-width: 420px) {
+
+    .events {
+        grid-template: repeat(5, 1fr) / 1fr; 
+    }
+    
+    .events h1 {
+        grid-row: 1 / 2;
+    }
+
+    .events p {
+        grid-row: 2 / 3;
+    }
+    
+    .rueda {
+        grid-row: 3 / 4; 
+        place-self: center;
+    }
+    
+    .rueda-2 {
+        grid-row: 4 / 5;
+    }
+    
+    .rueda-3 {
+        grid-row: 5 / 6;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
